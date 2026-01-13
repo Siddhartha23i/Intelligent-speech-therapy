@@ -9,7 +9,7 @@ app_file: streamlit_app.py
 pinned: false
 ---
 
-# 🗣️ AI Speech Therapy Platform
+#  AI Speech Therapy Platform
 
 An intelligent AI-powered pronunciation analysis and speech therapy application built with Streamlit.
 
@@ -221,3 +221,4 @@ For questions or feedback, please open an issue on the repository.
 ---
 
 **Built with ❤️ using AI and open-source technologies**
+
