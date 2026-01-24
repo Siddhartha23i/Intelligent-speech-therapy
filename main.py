@@ -1,8 +1,11 @@
-from modules.vosk_alignment import align_words
+from modules.vosk_alignment import VoskAligner
+
+# Initialize aligner once
+aligner = VoskAligner()
 
 audio = "data/align_audio/sample.wav"
 
-results = align_words(audio)
+results = aligner.align_words(audio)
 
 print("\nWORD TIMESTAMPS:")
 for r in results:

@@ -6,7 +6,9 @@ def preprocess_audio(input_path, output_path):
     audio, sr = librosa.load(input_path, sr=16000)
 
     # Normalize
-    audio = audio / np.max(np.abs(audio))
+    max_val = np.max(np.abs(audio))
+    if max_val > 0:
+        audio = audio / max_val
 
     # Remove silence
     audio, _ = librosa.effects.trim(audio, top_db=20)

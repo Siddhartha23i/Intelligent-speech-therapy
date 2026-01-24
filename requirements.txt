@@ -6,3 +6,4 @@ g2p-en
 praat-parselmouth
 torch
 torchaudio
+vosk
